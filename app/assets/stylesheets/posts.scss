@@ -1,0 +1,59 @@
+// Place all the styles related to the Posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+/* app/assets/stylesheets/application.css */
+
+.post-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .profile-picture img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .profile-name {
+    font-weight: bold;
+  }
+  
+  .post-date {
+    color: #888;
+    font-size: 14px;
+  }
+  
+  .post-content {
+    margin-bottom: 10px;
+  }
+  
+  .post-actions button {
+    background-color: #f0f2f5;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .like-button {
+    color: #1877f2;
+  }
+  
+  .comment-button {
+    color: #777;
+  }
+  
+  .share-button {
+    color: #00a400;
+  }
+  

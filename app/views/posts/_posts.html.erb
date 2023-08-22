@@ -1,0 +1,22 @@
+<% @posts.each do |post| %>
+
+<div class="card" style="width: 40rem;">
+  <div class="card-body">
+    <h5 class="card-title"><%= post.title %></h5>
+    <p class="card-text"> <%= post.text %> </p>
+  </div>
+  <%= image_tag 'fbpost.jpg' %>
+  <br>
+  <ul> 
+    <button type="submit" > Like <i class="fa-solid fa-thumbs-up"></i></button>
+    <button type="submit" > Share <i class="fa-solid fa-share"></i></button>   
+  </ul>
+  <div class="card-body">
+    <a href="#" class="card-link"> <%= link_to 'Edit', edit_post_path(post) %> </a>
+    <%= link_to 'Delete', post_path(post), method: :delete, data: { confirm: 'Are you sure you want to delete this post?' }, class: 'btn btn-danger', style: 'float: right;' %>
+  </div>
+</div>
+<br>
+
+
+<% end %>

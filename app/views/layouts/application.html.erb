@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FbApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <script src="https://kit.fontawesome.com/ce5c9251cd.js" crossorigin="anonymous"></script>
+    <%# <%= javascript_pack_tag 'application'%>
+    <%= stylesheet_link_tag 'application', 'http://fonts.googleapis.com/css?family=Raleway:400,700' %>
+    <%# <%= favicon_link_tag 'favicon.png' %>
+  </head>
+
+  <body>
+    <%= render 'shared/navbar' %>
+
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
+    <%= yield %>
+    
+  </body>
+</html>

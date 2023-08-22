@@ -1,0 +1,84 @@
+.navbar {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #4267B2; /* Facebook's blue color */
+  color: #fff; /* Text color for navbar items */
+  height: 60px; /* Adjust this height as needed */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-logo-image {
+  height: 40px; /* Set the height of the logo image as desired */
+  margin-bottom: 3px; /* Add some spacing between the logo and text */
+}
+
+.navbar-search {
+  flex: 1; /* Occupy remaining space in the middle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  width: 350px;
+  padding: 6px 15px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin-right: 5px;
+}
+
+.search-button {
+  padding: 5px 15px;
+  background-color: #ddd;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.navbar-items {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-items li {
+  margin-right: 20px;
+  list-style-type: none;
+}
+
+.navbar-items li:last-child {
+  margin-right: 0;
+}
+
+.navbar-items li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.navbar-items li a:hover {
+  text-decoration: underline;
+}

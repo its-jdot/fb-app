@@ -1,0 +1,33 @@
+<nav class="navbar">
+  <div class="container">
+    <div class="navbar-brand">
+      <!-- Add your application logo or branding here -->
+      <%= image_tag 'fblogo.png', size: "60x40", class: "navbar-logo-image"%>
+      <a class="navbar-logo" href="/"> Facebook </a>
+    </div>
+    <div class="navbar-search">
+      <form class="search-form" action="/search" method="GET">
+        <input type="text" name="q" placeholder="Search" class="search-input">
+        <button type="submit" class="search-button"><i class="fa-solid fa-search"></i></button>
+      </form>
+    </div>
+    <div class="navbar-menu">
+      <ul class="navbar-items">
+        <li><a href="/profile">Home</a></li>
+        <% if user_signed_in? %> 
+          <li>
+            <%= link_to 'Profile' , posts_path %> 
+          </li>
+          <li>
+            <%= link_to 'Sign Out' , destroy_user_session_path, method: :delete %> 
+          </li>
+        <% else %>
+          <li>
+            <%= link_to 'Sign In' , new_user_session_path %> 
+          </li>
+        <% end %>
+        <!-- Add more navbar items as needed -->
+      </ul>
+    </div>
+  </div>
+</nav>
